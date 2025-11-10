@@ -1,0 +1,3 @@
+
+minio username / access key: minioadmin
+minio password / secret key: minioadmin
