@@ -11,6 +11,7 @@ class User(Document):
     first_name: Optional[str] = None
     last_name: Optional[str] = None
     avatar_url: Optional[str] = None
+    preferred_language: Optional[str] = "en"  # 'en' | 'ru' | 'hy'
 
     otp: Optional[str] = None
     otp_expiry: Optional[datetime] = None

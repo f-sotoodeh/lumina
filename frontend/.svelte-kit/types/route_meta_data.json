@@ -1,0 +1,12 @@
+{
+	"/(app)": [],
+	"/": [],
+	"/auth": [],
+	"/auth/forgot-password": [],
+	"/auth/login": [],
+	"/auth/register": [],
+	"/(app)/decks": [],
+	"/(app)/decks/[id]": [],
+	"/(app)/decks/[id]/preview": [],
+	"/preview/[uuid]": []
+}

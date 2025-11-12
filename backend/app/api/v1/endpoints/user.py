@@ -78,6 +78,8 @@ async def update_profile(
         current_user.first_name = payload.first_name
     if payload.last_name is not None:
         current_user.last_name = payload.last_name
+    if payload.preferred_language is not None:
+        current_user.preferred_language = payload.preferred_language
     
     await current_user.save()
     

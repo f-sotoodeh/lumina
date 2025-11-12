@@ -5,7 +5,7 @@ from pydantic import BaseModel, EmailStr
 from datetime import datetime, timedelta, UTC
 from app.core.config import settings
 from app.core.email import send_otp_email
-from app.schemas.auth import AuthTokenData
+from app.schemas.auth import AuthTokenData, AuthResponseData, UserData
 from app.schemas.common import EmptyData
 from app.schemas.response import APIResponse
 from app.utils.response import api_response
@@ -42,7 +42,7 @@ class ResetPasswordRequest(BaseModel):
     otp: str
     new_password: str
 
-@router.post('/register', response_model=APIResponse[AuthTokenData])
+@router.post('/register', response_model=APIResponse[AuthResponseData])
 async def register(
     request: RegisterRequest, 
     response: Response,
@@ -103,14 +103,22 @@ async def register(
     return api_response(
         request=request,
         success=True,
-        data=AuthTokenData(
+        data=AuthResponseData(
             access_token=access,
             refresh_token=refresh,
-            token_type='bearer'
+            token_type='bearer',
+            user=UserData(
+                id=str(user.id),
+                email=user.email,
+                first_name=user.first_name,
+                last_name=user.last_name,
+                avatar_url=user.avatar_url,
+                preferred_language=user.preferred_language or "en"
+            )
         ).model_dump()
     )
 
-@router.post('/login', response_model=APIResponse[AuthTokenData])
+@router.post('/login', response_model=APIResponse[AuthResponseData])
 async def login(
     request: Request,
     form: OAuth2PasswordRequestForm = Depends(), 
@@ -152,10 +160,18 @@ async def login(
     return api_response(
         request=request,
         success=True,
-        data=AuthTokenData(
+        data=AuthResponseData(
             access_token=access,
             refresh_token=refresh,
-            token_type='bearer'
+            token_type='bearer',
+            user=UserData(
+                id=str(user.id),
+                email=user.email,
+                first_name=user.first_name,
+                last_name=user.last_name,
+                avatar_url=user.avatar_url,
+                preferred_language=user.preferred_language or "en"
+            )
         ).model_dump()
     )
 

@@ -1,6 +1,6 @@
 # backend/app/schemas/user.py
 from pydantic import BaseModel, EmailStr
-from typing import Optional
+from typing import Optional, Literal
 from datetime import datetime
 
 class UserOut(BaseModel):
@@ -9,6 +9,7 @@ class UserOut(BaseModel):
     first_name: Optional[str] = None
     last_name: Optional[str] = None
     avatar_url: Optional[str] = None
+    preferred_language: Optional[str] = "en"
     is_admin: bool = False
     created_at: datetime
     last_logged_in_at: Optional[datetime] = None
@@ -20,6 +21,7 @@ class UserUpdate(BaseModel):
     first_name: Optional[str] = None
     last_name: Optional[str] = None
     email: Optional[EmailStr] = None
+    preferred_language: Optional[Literal["en", "ru", "hy"]] = None
 
 # Response models for user endpoints
 class UserAvatarUploadData(BaseModel):
