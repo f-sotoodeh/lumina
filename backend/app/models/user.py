@@ -4,14 +4,27 @@ from pydantic import EmailStr
 from typing import Optional
 from datetime import datetime
 from pytz import UTC
+from pymongo import IndexModel, ASCENDING
 
 class User(Document):
     email: EmailStr
-    name: Optional[str] = None
+    first_name: Optional[str] = None
+    last_name: Optional[str] = None
+    avatar_url: Optional[str] = None
+
+    otp: Optional[str] = None
+    otp_expiry: Optional[datetime] = None
     password_hash: Optional[str] = None
     is_admin: bool = False
+
     created_at: datetime = datetime.now(UTC)
     last_logged_in_at: Optional[datetime] = None
 
     class Settings:
         name = "users"
+        indexes = [
+            IndexModel([("email", ASCENDING)], unique=True),
+            "is_admin",
+            "created_at",
+            "last_logged_in_at",
+        ]

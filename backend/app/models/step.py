@@ -16,11 +16,13 @@ class Step(Document):
 
     # settings
     data_transition_duration: int = 1000
+    data_autoplay: Optional[int] = None
     is_slide: bool = True
 
     # data
     inner_html: str = "<h1>New Slide</h1>"
     notes: str = ""
+    font_family: Optional[str] = None
 
     # meta
     user_id: str
@@ -28,3 +30,7 @@ class Step(Document):
 
     class Settings:
         name = "steps"
+        indexes = [
+            "user_id",
+            "deck_id"
+        ]

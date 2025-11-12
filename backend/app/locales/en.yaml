@@ -1,0 +1,84 @@
+auth:
+  # Messages
+  registered_successfully: Successfully registered
+  logged_out: Successfully logged out
+  otp_sent: If email exists, OTP sent
+  password_reset_success: Password reset successfully
+  
+  # Errors
+  invalid_otp: Invalid or expired OTP
+  invalid_credentials: Invalid credentials
+  email_already_registered: Email already registered
+  invalid_request: Invalid request
+  no_refresh_token: No refresh token provided
+  invalid_refresh_token: Invalid refresh token
+  user_not_found: User not found
+
+email:
+  otp_subject: Your Lumina OTP Code
+  otp_title: One-Time Password
+  otp_body: "Use this code to reset your password:"
+  otp_expiry: This code expires in 15 minutes.
+
+deck:
+  not_found: Deck not found
+  not_authorized: Not authorized to access this deck
+  created: Deck created successfully
+  updated: Deck updated successfully
+  deleted: Deck deleted successfully
+  cloned: Deck cloned successfully
+  shared: Deck shared successfully
+  share_revoked: Share access revoked
+  invalid_access_level: Invalid access level
+  cannot_share_with_self: Cannot share deck with yourself
+
+step:
+  not_found: Step not found
+  created: Step created successfully
+  updated: Step updated successfully
+  deleted: Step deleted successfully
+  duplicated: Step duplicated successfully
+  reordered: Steps reordered successfully
+  not_authorized: Not authorized to access this step
+
+file:
+  not_found: File not found
+  uploaded: File uploaded successfully
+  deleted: File deleted successfully
+  quota_exceeded: Storage quota exceeded
+  invalid_file_type: Invalid file type
+  file_too_large: File size exceeds maximum limit
+  not_authorized: Not authorized to access this file
+
+comment:
+  not_found: Comment not found
+  created: Comment created successfully
+  updated: Comment updated successfully
+  deleted: Comment deleted successfully
+  not_authorized: Not authorized to modify this comment
+  text_too_long: Comment text exceeds maximum length
+
+user:
+  profile_updated: Profile updated successfully
+  avatar_uploaded: Avatar uploaded successfully
+  avatar_deleted: Avatar deleted successfully
+  email_change_not_allowed: Email change not allowed
+
+admin:
+  user_email_updated: User email updated successfully
+  not_admin: Admin access required
+
+share:
+  invalid_user: Invalid user ID
+  already_shared: Deck already shared with this user
+  not_found: Share not found
+
+validation:
+  invalid_email: Invalid email format
+  password_weak: Password must be at least 8 characters with uppercase, lowercase and number
+  invalid_hex_color: Invalid hex color format
+  value_out_of_range: Value out of valid range
+  field_required: This field is required
+
+fonts:
+  loaded: Fonts loaded successfully

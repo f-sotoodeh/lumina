@@ -19,7 +19,10 @@ class Deck(Document):
     data_transition_duration: int = 1000
     data_width: int = 1024
     data_height: int = 768
+    data_max_scale: Optional[int] = None
+    data_min_scale: Optional[int] = None
     data_perspective: int = 1000
+    data_autoplay: Optional[int] = None
 
     # overview
     has_overview: bool = True
@@ -41,5 +44,6 @@ class Deck(Document):
             "is_public",
             "owner_id",
             "created_at",
-            "updated_at"
+            "updated_at",
+            [("owner_id", 1), ("title", 1)]
         ]

@@ -14,3 +14,10 @@ class Comment(Document):
 
     class Settings:
         name = "comments"
+        indexes = [
+            "user_id",
+            "deck_id",
+            "step_id",
+            "created_at",
+            [("deck_id", 1), ("created_at", -1)]
+        ]

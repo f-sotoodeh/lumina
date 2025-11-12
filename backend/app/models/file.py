@@ -17,3 +17,9 @@ class FileModel(Document):
 
     class Settings:
         name = "files"
+        indexes = [
+            "user_id",
+            "deck_id",
+            "created_at",
+            "size"
+        ]

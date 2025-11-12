@@ -1,0 +1,103 @@
+[
+  {
+    "name": "Roboto",
+    "url": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap",
+    "family": "'Roboto', sans-serif"
+  },
+  {
+    "name": "Open Sans",
+    "url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap",
+    "family": "'Open Sans', sans-serif"
+  },
+  {
+    "name": "Lato",
+    "url": "https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap",
+    "family": "'Lato', sans-serif"
+  },
+  {
+    "name": "Montserrat",
+    "url": "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap",
+    "family": "'Montserrat', sans-serif"
+  },
+  {
+    "name": "Poppins",
+    "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap",
+    "family": "'Poppins', sans-serif"
+  },
+  {
+    "name": "Raleway",
+    "url": "https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap",
+    "family": "'Raleway', sans-serif"
+  },
+  {
+    "name": "Ubuntu",
+    "url": "https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap",
+    "family": "'Ubuntu', sans-serif"
+  },
+  {
+    "name": "Playfair Display",
+    "url": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap",
+    "family": "'Playfair Display', serif"
+  },
+  {
+    "name": "Merriweather",
+    "url": "https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap",
+    "family": "'Merriweather', serif"
+  },
+  {
+    "name": "Nunito",
+    "url": "https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap",
+    "family": "'Nunito', sans-serif"
+  },
+  {
+    "name": "PT Sans",
+    "url": "https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap",
+    "family": "'PT Sans', sans-serif"
+  },
+  {
+    "name": "Oswald",
+    "url": "https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap",
+    "family": "'Oswald', sans-serif"
+  },
+  {
+    "name": "Inter",
+    "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap",
+    "family": "'Inter', sans-serif"
+  },
+  {
+    "name": "Source Sans Pro",
+    "url": "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap",
+    "family": "'Source Sans Pro', sans-serif"
+  },
+  {
+    "name": "Rubik",
+    "url": "https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap",
+    "family": "'Rubik', sans-serif"
+  },
+  {
+    "name": "Work Sans",
+    "url": "https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap",
+    "family": "'Work Sans', sans-serif"
+  },
+  {
+    "name": "Noto Sans",
+    "url": "https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap",
+    "family": "'Noto Sans', sans-serif"
+  },
+  {
+    "name": "Fira Sans",
+    "url": "https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap",
+    "family": "'Fira Sans', sans-serif"
+  },
+  {
+    "name": "Crimson Text",
+    "url": "https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap",
+    "family": "'Crimson Text', serif"
+  },
+  {
+    "name": "DM Sans",
+    "url": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap",
+    "family": "'DM Sans', sans-serif"
+  }
+]
+
